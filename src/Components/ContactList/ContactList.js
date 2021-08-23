@@ -8,7 +8,7 @@ import styles from './ContactList.module.css';
 const ContactList = () => {
   const contacts = useSelector(getVisibleContacts);
   const dispatch = useDispatch();
-  const onDeleteTodo = id => dispatch(contactsOperations.deleteContact(id));
+  const onDeleteContact = id => dispatch(contactsOperations.deleteContact(id));
 
   useEffect(() => {
     dispatch(contactsOperations.fetchContacts());
@@ -23,7 +23,7 @@ const ContactList = () => {
           </p>
           <button
             type="button"
-            onClick={() => onDeleteTodo(id)}
+            onClick={() => onDeleteContact(id)}
             className={styles.button}
           >
             Delete
