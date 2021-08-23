@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import contactsOperations from '../../redux/contacts-operations';
 import { getVisibleContacts } from '../../redux/contacts-selectors';
@@ -8,6 +9,10 @@ const ContactList = () => {
   const contacts = useSelector(getVisibleContacts);
   const dispatch = useDispatch();
   const onDeleteTodo = id => dispatch(contactsOperations.deleteContact(id));
+
+  useEffect(() => {
+    dispatch(contactsOperations.fetchContacts());
+  }, [dispatch]);
 
   return (
     <ul className={styles.contactList}>

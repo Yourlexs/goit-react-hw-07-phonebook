@@ -1,24 +1,14 @@
 {
   "contacts": [
     {
-      "name": "manya",
-      "number": "+79818418655",
-      "id": "bqKmPni"
+      "name": "Manya",
+      "number": "+79518618655",
+      "id": 1
     },
     {
-      "name": "dgdgd",
-      "number": "+79818418655",
-      "id": "hXfFMBv"
-    },
-    {
-      "name": "manya",
-      "number": "+79818418655",
-      "id": "2UoDGU_"
-    },
-    {
-      "name": "manya",
-      "number": "+79818418655",
-      "id": "AcHw52-"
+      "name": "Vasya",
+      "number": "+79666666675",
+      "id": 2
     }
   ]
 }

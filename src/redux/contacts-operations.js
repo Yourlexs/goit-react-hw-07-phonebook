@@ -18,7 +18,6 @@ const fetchContacts = () => async dispatch => {
 
   try {
     const { data } = await axios.get('/contacts');
-    console.log(data);
 
     dispatch(fetchContactsSuccess(data));
   } catch (error) {
