@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux';
-import contactsActions from '../../redux/contacts-actions';
+import contactsOperations from '../../redux/contacts-operations';
 import { getVisibleContacts } from '../../redux/contacts-selectors';
 
 import styles from './ContactList.module.css';
@@ -7,7 +7,7 @@ import styles from './ContactList.module.css';
 const ContactList = () => {
   const contacts = useSelector(getVisibleContacts);
   const dispatch = useDispatch();
-  const onDeleteTodo = id => dispatch(contactsActions.deleteContact(id));
+  const onDeleteTodo = id => dispatch(contactsOperations.deleteContact(id));
 
   return (
     <ul className={styles.contactList}>
